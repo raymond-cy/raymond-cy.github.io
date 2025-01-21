@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>PP</title>
+</head>
+<body>
+    <form style="text-align: center; padding: 0 px; font-size:medium;">
+        <h1 style="text-align: center;">
+            Chaminade Planting Program
+        </h1>
+        <p>
+            Running by <a href="runner.html" id="DRCASEY">Dr. Casey</a>  and <a href="runner.html" id="Rayray">Raymond Chen</a>
+        </p>
+        <h1 style="text-align: center; padding: 15px;">2025 Calendar</h1>
+    <div class="calendar-container">
+        <!-- Example for January -->
+        <div class="month active" id="month-0">
+            <div class="month-header">January</div>
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="days">
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+                <div>13</div>
+                <div>14</div>
+                <div>15</div>
+                <div>16</div>
+                <div>17</div>
+                <div>18</div>
+                <div>19</div>
+                <div>20</div>
+                <div>21</div>
+                <div>22</div>
+                <div>23</div>
+                <div>24</div>
+                <div>25</div>
+                <div>26</div>
+                <div>27</div>
+                <div>28</div>
+                <div>29</div>
+                <div>30</div>
+                <div>31</div>
+            </div>
+        </div>
+        <!-- Repeat for other months (February to December) -->
+        <div class="month" id="month-1">
+            <div class="month-header">February</div>
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="days">
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+                <div>13</div>
+                <div>14</div>
+                <div>15</div>
+                <div>16</div>
+                <div>17</div>
+                <div>18</div>
+                <div>19</div>
+                <div>20</div>
+                <div>21</div>
+                <div>22</div>
+                <div>23</div>
+                <div>24</div>
+                <div>25</div>
+                <div>26</div>
+                <div>27</div>
+                <div>28</div>
+            </div>
+        </div>
+    </div>
+    <p>
+        G stands for "Plant Give Away"
+    </p>
+    <p>
+        P stands for "Planting" 
+    </p>
+    <script>
+        let currentMonth = 0;
+        const months = document.querySelectorAll('.month');
+
+        function changeMonth(direction) {
+            months[currentMonth].classList.remove('active');
+            currentMonth = (currentMonth + direction + months.length) % months.length;
+            months[currentMonth].classList.add('active');
+        }
+    </script>
+    <div class="navigation" style="text-align: center;">
+        <button onclick="changeMonth(-1)">Previous</button>
+        <button onclick="changeMonth(1)">Next</button>
+    </div>
+        <header>
+            <time datetime=""></time>
+            <h2>
+                <p>
+                    What is Planting Program?
+                </p>
+            </h2>
+                <p>
+                    As it's named "Planting Program", we are dedicated in planting plants in the backyard of our campus and doing
+                    <a href="#plantgiveaway">Plant Give Away.
+                    </a>
+                </p>
+            <h2>
+                When do we host Planting Program?
+            </h2>
+                <p>
+                    We usually host it after school, and typically we will host it once or twice (seldom) a week.
+                </p>
+            <h2>
+                <a name="plantgiveaway">
+                    What's Plant Give Away?
+                </a>
+            </h2>
+                <p>
+                    As it's name, we are giving plants to others for free during Plant Give Away. We usually host this on the weekend because it usually lasts from 9:00 am to 3:00 pm, 4:00 pm, or even later.
+                </p>
+                <h2>
+                    About service hour:
+                </h2>
+                    <p>
+                        Does the whole planting program counts for service hour? Yes, it does. 
+                    </p>
+        </header>
+            <img src="SAGE.jpg" alt="Sage" width="227" height="403" title="From Yu Chen 25 aka Raymond">            
+    </form>
+</body>
+</html>
